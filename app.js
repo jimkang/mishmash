@@ -55,7 +55,7 @@ async function followRoute() {
       audioBuffer: audioBuffers[0],
       containerSelector: '.file1-audio',
     });
-    if (audioBuffers.length > 0) {
+    if (audioBuffers.length > 1) {
       renderResultAudio({
         audioBuffer: audioBuffers[1],
         containerSelector: '.file2-audio',
