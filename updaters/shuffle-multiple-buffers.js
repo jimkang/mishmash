@@ -6,7 +6,7 @@ function shuffleMultipleBuffers(
   {
     audioContext,
     decodedBuffers,
-    tempo,
+    bpm,
     fadeInLengthAsSegmentPct,
     fadeOutLengthAsSegmentPct,
   },
@@ -25,7 +25,7 @@ function shuffleMultipleBuffers(
       return;
     }
 
-    let segmentLengthInSeconds = 60.0 / tempo;
+    let segmentLengthInSeconds = 60.0 / bpm;
     q.defer(shuffleBuffer, {
       audioContext,
       decodedBuffer,
@@ -59,6 +59,8 @@ function shuffleMultipleBuffers(
         });
         index += shuffledBuffers[i].length;
       }
+
+      // shuffleBuffer({ audioContext, combinedBuffer, })
       done(null, combinedBuffer);
     }
   }

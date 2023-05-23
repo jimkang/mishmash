@@ -73,7 +73,7 @@ async function followRoute() {
     let { error, values } = await ep(shuffleMultipleBuffers, {
       audioContext: ctx,
       decodedBuffers: audioBuffers,
-      tempo: 120,
+      bpm: 91,
       fadeInLengthAsSegmentPct: 5,
       fadeOutLengthAsSegmentPct: 5,
     });
