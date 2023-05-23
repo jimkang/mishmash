@@ -1,6 +1,6 @@
 # mishmash
 
-Blends some audio in a really literal way.
+Chops audio up into tiny pieces, then reconstitutes them out of order.
 
 ## Getting it running
 
