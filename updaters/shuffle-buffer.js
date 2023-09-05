@@ -74,6 +74,7 @@ function chopUpPCMArrays(
   var sourceOffsets = probable.shuffle(range(numberOfSegments));
   sourceOffsets.forEach(copyIntoNewArrays);
 
+  // Where does does destIndex come from? It's the index of the sourceOffsets array.
   function copyIntoNewArrays(sourceIndex, destIndex) {
     var sourceOffset = sourceIndex * clipSizeInFrames;
     var destOffset = destIndex * clipSizeInFrames;
